@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./android-chrome-192x192.png"
+    />
+    <title>Konstantinos Poulopoulos | Personal Website</title>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section id="header-section" class="header-home pb-1">
+      <div class="container">
+        <nav id="main-nav">
+          <a href="index.html">
+            <img id="logo" src="./logo.png" alt="" />
+          </a>
+          <ul>
+            <li><a href="#main-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <img
+            class="header-image"
+            src="./img/konstantinos_poulopoulos.svg"
+            alt=""
+          />
+          <h1>Hi,<i class="wavehand">👋🏻</i> I'm Kostas.</h1>
+          <p>If you want to check my work<br> you did it already by visiting this website!</p>
+          <div class="image-bg"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main section -->
+    <section id="main-section">
+      <div class="container text-center">
+        <h2 class="section-title">Projects</h2>
+        <div class="bottom-line"></div>
+        <div class="items">
+          <div class="item">
+            <a target="_blank" href="https://automotorservice.gr/index.html">
+              <img src="./img/project-1.PNG" alt="project-1-image"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="bottom-line"></div>
+        <div class="flex-items">
+          <div class="flex-item">
+        <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="group-items">
+              <div class="pb-2">
+                <label>Your Name:</label>
+                <input type="text" name="name" required/>          
+              </div>
+              <div class="pb-2">
+                <label>Your Email:</label>
+                <input type="email" name="email" required/>
+              </div>
+            </div>
+            <div class="text pb-2">
+              <label>Message:</label>
+              <textarea name="message" required></textarea>
+            </div>
+            <div data-netlify-recaptcha="true"></div>
+            <div>
+              <button type="submit">Send</button>
+            </div>
+        </form>
+      </div>
+      <div class="contact-text">
+        <p>If you want to get in touch with me for more information please send me an email. I will reply to you as soon as possible.</p>
+      </div>
+    </div>
+    </section>
+
+    <!-- Footer section -->
+    <div class="container">
+      <footer>
+        <p>© 2021 Konstantinos Poulopoulos</p>
+        <ul>
+          <li>
+            <a href="https://github.com/konpou"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/konstantinospoulopoulos/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+.container {
+  padding: 0 0.5rem;
+  margin: auto;
+  overflow: hidden;
+  max-width: 1285px;
+  text-align: center; }
+
+.titles {
+  font-size: 1.5rem; }
+
+.text-center {
+  text-align: center; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  font-weight: 100; }
+
+.bottom-line {
+  height: 2px;
+  width: 3.3rem;
+  background: #c3074f;
+  display: block;
+  margin: 0 auto 1rem auto;
+  margin-bottom: 2rem; }
+
+.pb-1 {
+  padding-bottom: 1rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
+html {
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif; }
+
+body {
+  background: #000000;
+  line-height: 1.6;
+  color: #fff;
+  min-height: 100vh; }
+
+::selection {
+  color: #fff;
+  background: #950742; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+ul {
+  list-style-type: none; }
+
+h1 {
+  font-size: 3rem; }
+
+p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.7; }
+
+img {
+  width: 100%; }
+
+#header-section.header-home {
+  min-height: 100vh;
+  background: url("https://images.unsplash.com/photo-1549080876-457984b78535?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover; }
+
+#header-section .header-content {
+  text-align: center; }
+  #header-section .header-content p {
+    padding-top: 7rem; }
+
+#header-section .wavehand {
+  font-size: 45px; }
+  #header-section .wavehand:hover {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 3s;
+    /* Change to speed up or slow down */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+    cursor: pointer; }
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(14deg); }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg); }
+  30% {
+    transform: rotate(14deg); }
+  40% {
+    transform: rotate(-4deg); }
+  50% {
+    transform: rotate(10deg); }
+  60% {
+    transform: rotate(0deg); }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg); } }
+
+#header-section #logo {
+  height: 72px;
+  width: 72px; }
+
+#header-section #main-nav {
+  display: flex;
+  justify-content: space-between; }
+  #header-section #main-nav ul {
+    display: flex; }
+    #header-section #main-nav ul li {
+      padding: 1rem 1.4rem; }
+      #header-section #main-nav ul li a {
+        display: inline-block; }
+        #header-section #main-nav ul li a::after {
+          display: block;
+          content: "";
+          border-bottom: solid 0.13rem #c3074f;
+          transform: scaleX(0);
+          transition: transform 700ms ease-in-out; }
+        #header-section #main-nav ul li a:hover:after {
+          transform: scaleX(1); }
+
+#header-section .header-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block; }
+
+#main-section {
+  padding: 1rem; }
+  #main-section .items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center; }
+    #main-section .items .item {
+      display: inline-block;
+      height: 60%;
+      width: 60%;
+      border-radius: 50%;
+      transition: all 0.3s ease-in-out; }
+      #main-section .items .item:hover {
+        transform: scale(1.1); }
+      #main-section .items .item img {
+        display: inline-block;
+        border-radius: 50%;
+        opacity: 0.7; }
+        #main-section .items .item img:hover {
+          opacity: 1; }
+
+#contact-section {
+  padding: 2.3rem;
+  margin-top: 1.2rem;
+  font-size: 1rem; }
+  #contact-section .flex-items {
+    display: flex; }
+    #contact-section .flex-items .flex-item {
+      flex-basis: 200%; }
+  #contact-section .group-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem; }
+    #contact-section .group-items input {
+      font-size: inherit;
+      width: 100%;
+      padding: 0.9rem;
+      background-color: #dfd9d9;
+      outline-color: #c3074f;
+      border: none; }
+    #contact-section .group-items div {
+      width: 100%;
+      text-align: left; }
+  #contact-section .text {
+    text-align: left; }
+  #contact-section textarea {
+    font-size: inherit;
+    padding: 1rem;
+    background-color: #dfd9d9;
+    min-width: 100%;
+    max-width: min-content;
+    max-height: 15rem;
+    min-height: 5rem;
+    outline-color: #c3074f;
+    border: none; }
+  #contact-section button {
+    width: 7rem;
+    padding: 1rem;
+    font-weight: bolder;
+    border: none; }
+    #contact-section button:hover {
+      opacity: 0.89;
+      color: #fff;
+      background-color: #950742; }
+  #contact-section .contact-text {
+    text-align: center;
+    padding: 1rem;
+    margin-left: 4rem; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 2rem; }
+  footer p {
+    font-size: 0.8rem; }
+  footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer ul li {
+      padding: 0 1rem; }
+      footer ul li i {
+        font-size: 2rem; }
+        footer ul li i:hover {
+          transition: opacity 0.3s, color 0.3s ease-in-out;
+          opacity: 0.8;
+          color: #950742; }
+
+@media (max-width: 1320px) {
+  #contact-section .contact-text {
+    margin-left: 0;
+    padding: 0; }
+  #contact-section .group-items {
+    display: flex;
+    flex-direction: column; }
+  #contact-section .flex-items {
+    flex-direction: column-reverse; }
+  #contact-section .contact-text {
+    margin-bottom: 2rem;
+    font-size: 1.3rem; }
+  #header-section .header-image {
+    height: 150px;
+    width: 150px; }
+  #header-section .header-content p {
+    padding: 0.8rem; }
+  footer {
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    footer p {
+      margin-bottom: 1rem;
+      font-size: 0.9rem; }
+  #main-section .items .item {
+    width: 94%; } }
