@@ -205,11 +205,20 @@ img {
       width: 100%;
       padding: 0.9rem;
       background-color: rgb(223, 217, 217);
-      outline-color: $main-color;
-      border: none;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        border: 2px solid $main-color;
+      }
+
+      &:invalid {
+        background-color: $primary-color;
+      }
     }
     // Name & email
     div {
+      border: none;
       width: 100%;
       text-align: left;
     }
@@ -227,7 +236,17 @@ img {
     max-height: 15rem;
     min-height: 5rem;
     outline-color: $main-color;
-    border: none;
+    outline: none;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 2px solid $main-color;
+    }
+
+    &:invalid {
+      background-color: $primary-color;
+    }
   }
 
   button {

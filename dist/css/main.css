@@ -175,10 +175,14 @@ img {
       font-size: inherit;
       width: 100%;
       padding: 0.9rem;
-      background-color: #dfd9d9;
-      outline-color: #c3074f;
-      border: none; }
+      background-color: #dfd9d9; }
+      #contact-section .group-items input:focus, #contact-section .group-items input:hover {
+        outline: none;
+        border: 2px solid #c3074f; }
+      #contact-section .group-items input:invalid {
+        background-color: #6f2234; }
     #contact-section .group-items div {
+      border: none;
       width: 100%;
       text-align: left; }
   #contact-section .text {
@@ -192,7 +196,12 @@ img {
     max-height: 15rem;
     min-height: 5rem;
     outline-color: #c3074f;
-    border: none; }
+    outline: none; }
+    #contact-section textarea:focus, #contact-section textarea:hover {
+      outline: none;
+      border: 2px solid #c3074f; }
+    #contact-section textarea:invalid {
+      background-color: #6f2234; }
   #contact-section button {
     width: 7rem;
     padding: 1rem;
