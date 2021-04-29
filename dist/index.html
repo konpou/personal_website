@@ -75,7 +75,7 @@
         <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="group-items">
               <div class="pb-2">
-                <label>Your full name:</label>
+                <label>Your ull name:</label>
                 <input type="text" name="name" required pattern="[A-Za-z\s]{3,17} [A-Za-z]{4,17}"/>
               </div>
               <div class="pb-2">
@@ -85,7 +85,7 @@
             </div>
             <div class="text pb-2">
               <label>Message:</label>
-              <textarea name="message" required></textarea>
+              <textarea minlength="11" name="message" required></textarea>
             </div>
             <div data-netlify-recaptcha="true"></div>
             <div>

@@ -175,7 +175,7 @@ img {
       font-size: inherit;
       width: 100%;
       padding: 0.9rem;
-      background-color: #dfd9d9; }
+      border: 2px solid transparent; }
       #contact-section .group-items input:focus, #contact-section .group-items input:hover {
         outline: none;
         border: 2px solid #c3074f; }
@@ -196,7 +196,8 @@ img {
     max-height: 15rem;
     min-height: 5rem;
     outline-color: #c3074f;
-    outline: none; }
+    outline: none;
+    border: 2px solid transparent; }
     #contact-section textarea:focus, #contact-section textarea:hover {
       outline: none;
       border: 2px solid #c3074f; }

@@ -204,7 +204,7 @@ img {
       font-size: inherit;
       width: 100%;
       padding: 0.9rem;
-      background-color: rgb(223, 217, 217);
+      border: 2px solid transparent;
 
       &:focus,
       &:hover {
@@ -237,6 +237,7 @@ img {
     min-height: 5rem;
     outline-color: $main-color;
     outline: none;
+    border: 2px solid transparent;
 
     &:focus,
     &:hover {
