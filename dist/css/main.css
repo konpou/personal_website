@@ -158,9 +158,13 @@ img {
       #main-section .items .item img {
         display: block;
         border-radius: 50%;
-        opacity: 0.7; }
+        opacity: 0.7;
+        margin-bottom: 2rem; }
         #main-section .items .item img:hover {
           opacity: 1; }
+    #main-section .items p {
+      padding: 2rem;
+      max-width: 70%; }
 
 #contact-section {
   padding: 2.3rem;
