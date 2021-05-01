@@ -14,13 +14,14 @@ form.addEventListener("submit", function (event) {
     !message.validity.valid
   ) {
     event.preventDefault();
-  } else if (
-    email.validity.valid &&
-    names.validity.valid &&
-    message.validity.valid
-  ) {
-    form.setAttribute("action", "/success.html");
   }
+  //   else if (
+  //     email.validity.valid &&
+  //     names.validity.valid &&
+  //     message.validity.valid
+  //   ) {
+  //     form.setAttribute("action", "/success.html");
+  //   }
 });
 
 // function validate() {
