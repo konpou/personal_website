@@ -3,14 +3,13 @@ const form = document.getElementsByTagName("form")[0];
 const fullName = document.getElementById("fullName");
 const mail = document.getElementById("mail");
 const message = document.getElementById("message");
-const formInputs = document.getElementsByTagName("input");
 
 function validate() {
   form.addEventListener("submit", function (event) {
     // if the email field is valid, we let the form submit
 
     if (
-      !main.validity.valid &&
+      !mail.validity.valid &&
       !fullName.validity.valid &&
       !message.validity.valid
     ) {
