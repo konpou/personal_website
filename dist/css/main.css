@@ -58,7 +58,7 @@ ul {
   list-style-type: none; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 2.2rem; }
 
 p {
   font-size: 1.5rem;
@@ -105,6 +105,8 @@ label {
     width: 200px;
     border-radius: 50%;
     display: inline-block; }
+  #header-section .header-content p {
+    color: #ffffff; }
   #header-section .header-content .wavehand {
     font-size: 45px; }
     #header-section .header-content .wavehand:hover {
@@ -281,3 +283,7 @@ footer {
   label,
   .contact-text {
     font-size: 1.2rem; } }
+
+@media (min-width: 767px) {
+  #header-section .header-content p {
+    padding: 10rem; } }
