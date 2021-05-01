@@ -13,5 +13,7 @@ form.addEventListener("submit", function (event) {
     !message.validity.valid
   ) {
     event.preventDefault();
+  } else {
+    form.setAttribute("action", "/success.html");
   }
 });
