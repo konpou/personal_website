@@ -5,24 +5,26 @@ const mail = document.getElementById("mail");
 const message = document.getElementById("message");
 const formInputs = document.getElementsByTagName("input");
 
-form.addEventListener("submit", function (event) {
-  // if the email field is valid, we let the form submit
+function validate() {
+  form.addEventListener("submit", function (event) {
+    // if the email field is valid, we let the form submit
 
-  if (
-    !email.validity.valid &&
-    !names.validity.valid &&
-    !message.validity.valid
-  ) {
-    event.preventDefault();
-  }
-  //   else if (
-  //     email.validity.valid &&
-  //     names.validity.valid &&
-  //     message.validity.valid
-  //   ) {
-  //     form.setAttribute("action", "/success.html");
-  //   }
-});
+    if (
+      !main.validity.valid &&
+      !fullName.validity.valid &&
+      !message.validity.valid
+    ) {
+      event.preventDefault();
+    }
+    //   else if (
+    //     email.validity.valid &&
+    //     names.validity.valid &&
+    //     message.validity.valid
+    //   ) {
+    //     form.setAttribute("action", "/success.html");
+    //   }
+  });
+}
 
 // function validate() {
 //   const fullName = document.getElementById("fullName").value;
