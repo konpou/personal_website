@@ -48,72 +48,24 @@ img {
   height: 100%;
 }
 
+label {
+  font-size: 1.5rem;
+}
+
 // Header
 #header-section {
   &.header-home {
     min-height: 100vh;
     background: $bg-image no-repeat center center / cover;
   }
-
-  .header-content {
-    text-align: center;
-
-    p {
-      padding-top: 7rem;
-    }
-  }
-
-  // Hand
-  .wavehand {
-    font-size: 45px;
-
-    // Hand Motion
-    &:hover {
-      animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-      animation-duration: 3s; /* Change to speed up or slow down */
-      transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-      display: inline-block;
-      cursor: pointer;
-
-      @keyframes wave-animation {
-        0% {
-          transform: rotate(0deg);
-        }
-        10% {
-          transform: rotate(14deg);
-        } /* The following five values can be played with to make the waving more or less extreme */
-        20% {
-          transform: rotate(-8deg);
-        }
-        30% {
-          transform: rotate(14deg);
-        }
-        40% {
-          transform: rotate(-4deg);
-        }
-        50% {
-          transform: rotate(10deg);
-        }
-        60% {
-          transform: rotate(0deg);
-        } /* Reset for the last half to pause */
-        100% {
-          transform: rotate(0deg);
-        }
-      }
-    }
-  }
-
-  #logo {
-    height: 72px;
-    width: 72px;
-  }
-
   // Navigation Menu
   #main-nav {
     display: flex;
     justify-content: space-between;
-
+    .logo {
+      height: 72px;
+      width: 72px;
+    }
     ul {
       display: flex;
 
@@ -122,6 +74,7 @@ img {
 
         a {
           display: inline-block;
+          font-size: 1.2rem;
 
           &::after {
             display: block;
@@ -138,11 +91,60 @@ img {
     }
   }
 
-  .header-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    display: inline-block;
+  // Header content
+  .header-content {
+    text-align: center;
+
+    .header-image {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    // Hand
+    .wavehand {
+      font-size: 45px;
+
+      // Hand Motion
+      &:hover {
+        animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+        animation-duration: 3s; /* Change to speed up or slow down */
+        transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+        display: inline-block;
+        cursor: pointer;
+
+        @keyframes wave-animation {
+          0% {
+            transform: rotate(0deg);
+          }
+          10% {
+            transform: rotate(14deg);
+          } /* The following five values can be played with to make the waving more or less extreme */
+          20% {
+            transform: rotate(-8deg);
+          }
+          30% {
+            transform: rotate(14deg);
+          }
+          40% {
+            transform: rotate(-4deg);
+          }
+          50% {
+            transform: rotate(10deg);
+          }
+          60% {
+            transform: rotate(0deg);
+          } /* Reset for the last half to pause */
+          100% {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+    p {
+      padding-top: 7rem;
+    }
   }
 }
 
@@ -150,13 +152,15 @@ img {
 #main-section {
   padding: 1rem;
   .items {
+    p {
+      max-width: 70%;
+    }
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
 
     .item {
-      // padding: 1rem;
       display: inline-block;
       height: 60%;
       width: 60%;
@@ -168,7 +172,6 @@ img {
       }
 
       a {
-        // display: inline-block;
         height: inherit;
       }
 
@@ -182,11 +185,6 @@ img {
           opacity: 1;
         }
       }
-    }
-
-    p {
-      padding: 2rem;
-      max-width: 70%;
     }
   }
 }
@@ -278,7 +276,7 @@ img {
 
   .contact-text {
     text-align: center;
-    padding: 1rem;
+    padding: 3.5rem 1rem 1rem;
     margin-left: 4rem;
   }
 }
@@ -291,7 +289,7 @@ footer {
   height: 5vh;
   padding: 2rem;
   p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   ul {
     display: flex;
@@ -316,11 +314,30 @@ footer {
 
 // Media querries
 @media (max-width: 1320px) {
+  // Header
+  #header-section {
+    .header-image {
+      height: 150px;
+      width: 150px;
+    }
+    .header-content p {
+      padding: 0.8rem;
+    }
+  }
+  // Main
+  #main-section .items {
+    .item {
+      width: 94%;
+    }
+  }
+
   // Contact
   #contact-section {
     .contact-text {
       margin-left: 0;
       padding: 0;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
     }
 
     .group-items {
@@ -330,22 +347,6 @@ footer {
 
     .flex-items {
       flex-direction: column-reverse;
-    }
-
-    .contact-text {
-      margin-bottom: 2rem;
-      font-size: 1.3rem;
-    }
-  }
-
-  // Header
-  #header-section {
-    .header-image {
-      height: 150px;
-      width: 150px;
-    }
-    .header-content p {
-      padding: 0.8rem;
     }
   }
 
@@ -362,10 +363,24 @@ footer {
       font-size: 0.9rem;
     }
   }
+}
 
-  #main-section .items {
-    .item {
-      width: 94%;
+@media (max-width: 850px) {
+  #main-section {
+    .items {
+      img {
+        transform: scale(1.13);
+      }
+      p {
+        min-width: 100%;
+        // font-size: 1.2rem;
+      }
     }
+  }
+
+  p,
+  label,
+  .contact-text {
+    font-size: 1.2rem;
   }
 }
