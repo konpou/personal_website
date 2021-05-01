@@ -284,6 +284,6 @@ footer {
   .contact-text {
     font-size: 1.2rem; } }
 
-@media (min-width: 767px) {
+@media (min-width: 970px) {
   #header-section .header-content p {
-    padding: 4rem 28rem; } }
+    padding: 4rem 20rem; } }
