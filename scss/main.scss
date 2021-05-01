@@ -357,7 +357,6 @@ footer {
   // Footer
   footer {
     height: 20vh;
-    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -377,7 +376,6 @@ footer {
       }
       p {
         min-width: 100%;
-        // font-size: 1.2rem;
       }
     }
   }
@@ -392,7 +390,7 @@ footer {
 @media (min-width: 767px) {
   #header-section {
     .header-content p {
-      padding: 10rem;
+      padding: 4rem 28rem;
     }
   }
 }
