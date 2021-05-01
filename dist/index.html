@@ -93,11 +93,14 @@
               method="POST"
               data-netlify="true"
               data-netlify-recaptcha="true"
+              onsubmit="validate()"
+              action="/success.html"
             >
               <div class="group-items">
                 <div class="pb-2">
                   <label>Your full name:</label>
                   <input
+                    id="fullName"
                     type="text"
                     name="name"
                     required
@@ -107,6 +110,7 @@
                 <div class="pb-2">
                   <label>Your email:</label>
                   <input
+                    id="mail"
                     type="email"
                     name="email"
                     required
@@ -116,7 +120,12 @@
               </div>
               <div class="text pb-2">
                 <label>Message:</label>
-                <textarea minlength="11" name="message" required></textarea>
+                <textarea
+                  id="message"
+                  minlength="11"
+                  name="message"
+                  required
+                ></textarea>
               </div>
               <div class="pb-2" data-netlify-recaptcha="true"></div>
               <div>
