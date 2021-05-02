@@ -262,7 +262,8 @@ footer {
     font-size: 1.3rem; }
   #contact-section .group-items {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 0; }
   #contact-section .flex-items {
     flex-direction: column-reverse; }
   footer {
@@ -286,4 +287,4 @@ footer {
 
 @media (min-width: 970px) {
   #header-section .header-content p {
-    padding: 4rem 20rem; } }
+    padding: 4rem 10rem; } }
