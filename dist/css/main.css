@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 .container {
   padding: 0 0.5rem;
   margin: auto;
@@ -189,7 +190,8 @@ label {
         outline: none;
         border: 2px solid #c3074f; }
       #contact-section .group-items input:invalid {
-        background-color: #6f2234; }
+        background-color: #6f2234;
+        color: white; }
     #contact-section .group-items div {
       border: none;
       width: 100%;
@@ -206,7 +208,8 @@ label {
     min-height: 5rem;
     outline-color: #c3074f;
     outline: none;
-    border: 2px solid transparent; }
+    border: 2px solid transparent;
+    color: #fff; }
     #contact-section textarea:focus, #contact-section textarea:hover {
       outline: none;
       border: 2px solid #c3074f; }
@@ -225,6 +228,8 @@ label {
     text-align: center;
     padding: 3.5rem 1rem 1rem;
     margin-left: 4rem; }
+  #contact-section .hidden {
+    display: none; }
 
 footer {
   display: flex;

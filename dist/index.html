@@ -12,11 +12,6 @@
       name="keywords"
       content="Konstantinos Poulopoulos, Poulopoulos, Front-End Developer"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -74,8 +69,12 @@
             page.
           </p>
           <div class="item">
-            <a href="https://automotorservice.gr/index.html" target="_blank">
-              <img src="./img/project-1.jpg" alt="project-1-image"
+            <a
+              href="https://automotorservice.gr/index.html"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="./img/project-2.jpg" alt="project-1-image"
             /></a>
           </div>
         </div>
@@ -92,13 +91,19 @@
               name="contact"
               method="POST"
               data-netlify="true"
-              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-field"
               action="/success.html"
             >
+              <p class="hidden">
+                <label
+                  >Don’t fill this out if you’re human: <input name="bot-field"
+                /></label>
+              </p>
               <div class="group-items">
                 <div class="pb-2">
-                  <label>Your full name:</label>
+                  <label for="name">Your full name:</label>
                   <input
+                    id="name"
                     type="text"
                     name="name"
                     required
@@ -106,8 +111,9 @@
                   />
                 </div>
                 <div class="pb-2">
-                  <label>Your email:</label>
+                  <label for="email">Your email:</label>
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     required
@@ -116,10 +122,14 @@
                 </div>
               </div>
               <div class="text pb-2">
-                <label>Message:</label>
-                <textarea minlength="11" name="message" required></textarea>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  minlength="11"
+                  name="message"
+                  required
+                ></textarea>
               </div>
-              <div class="pb-2" data-netlify-recaptcha="true"></div>
               <div>
                 <button type="submit">Send</button>
               </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import "config";
 @import "utilities";
 
@@ -227,6 +228,7 @@ label {
 
       &:invalid {
         background-color: $primary-color;
+        color: white;
       }
     }
 
@@ -253,6 +255,7 @@ label {
     outline-color: $main-color;
     outline: none;
     border: 2px solid transparent;
+    color: #fff;
 
     &:focus,
     &:hover {
@@ -282,6 +285,10 @@ label {
     text-align: center;
     padding: 3.5rem 1rem 1rem;
     margin-left: 4rem;
+  }
+
+  .hidden {
+    display: none;
   }
 }
 
