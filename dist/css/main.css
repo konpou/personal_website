@@ -165,9 +165,7 @@ label {
         display: block;
         border-radius: 50%;
         opacity: 0.7;
-        margin-bottom: 2rem;
-        max-height: 386.94px;
-        min-height: 386.94px; }
+        margin-bottom: 2rem; }
         #main-section .items .item img:hover {
           opacity: 1; }
 
