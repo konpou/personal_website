@@ -184,7 +184,7 @@ label {
         display: block;
         border-radius: 50%;
         opacity: 0.7;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         &:hover {
           opacity: 1;
@@ -196,7 +196,7 @@ label {
 
 // Contact
 #contact-section {
-  padding: 2.3rem;
+  padding: 0 2.3rem 2.3rem 2.3rem;
   margin-top: 1.2rem;
   font-size: 1rem;
 
