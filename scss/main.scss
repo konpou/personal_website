@@ -255,7 +255,6 @@ label {
     outline-color: $main-color;
     outline: none;
     border: 2px solid transparent;
-    color: #fff;
 
     &:focus,
     &:hover {
@@ -265,6 +264,7 @@ label {
 
     &:invalid {
       background-color: $primary-color;
+      color: #fff;
     }
   }
 
