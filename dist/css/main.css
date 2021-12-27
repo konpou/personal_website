@@ -209,12 +209,13 @@ label {
     outline-color: #c3074f;
     outline: none;
     border: 2px solid transparent;
-    color: #fff; }
+    color: #000; }
     #contact-section textarea:focus, #contact-section textarea:hover {
       outline: none;
       border: 2px solid #c3074f; }
     #contact-section textarea:invalid {
-      background-color: #6f2234; }
+      background-color: #6f2234;
+      color: #fff; }
   #contact-section button {
     width: 7rem;
     padding: 1rem;
