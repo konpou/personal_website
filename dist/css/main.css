@@ -144,30 +144,31 @@ label {
 
 #main-section {
   padding: 1rem; }
-  #main-section .items {
+  #main-section .projects {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center; }
-    #main-section .items .hidden_item {
-      transition: transform 1s, opacity 1s;
+    #main-section .projects .project {
+      transition: transform 1s, opacity 1s; }
+    #main-section .projects .hidden--project {
       opacity: 0;
-      transform: translateY(8rem); }
-    #main-section .items .item {
+      transform: translateX(8rem); }
+    #main-section .projects .item {
       display: inline-block;
       height: 60%;
       width: 60%;
       border-radius: 50%;
       transition: all 0.3s ease-in-out; }
-      #main-section .items .item:hover {
+      #main-section .projects .item:hover {
         transform: scale(1.083); }
-      #main-section .items .item a {
+      #main-section .projects .item a {
         height: inherit; }
-      #main-section .items .item img {
+      #main-section .projects .item img {
         border-radius: 50%;
         opacity: 0.7;
         margin-bottom: 1rem; }
-        #main-section .items .item img:hover {
+        #main-section .projects .item img:hover {
           opacity: 1; }
 
 #contact-section {
@@ -176,8 +177,17 @@ label {
   font-size: 1rem; }
   #contact-section .flex-items {
     display: flex; }
-    #contact-section .flex-items .flex-item {
-      flex-basis: 200%; }
+    #contact-section .flex-items .form-animation {
+      animation-name: moveInLeft;
+      animation-duration: 4.5s; }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-15rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
   #contact-section .group-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -264,9 +274,9 @@ footer {
     padding: 1rem 1rem 0rem 1rem; }
     #main-section .container .bottom-line {
       margin-bottom: 0.5rem; }
-    #main-section .items .item {
+    #main-section .projects .item {
       padding: 1rem 1rem 0rem 1rem; }
-      #main-section .items .item img {
+      #main-section .projects .item img {
         transform: scale(1.06);
         margin-bottom: 0.5rem; }
     #main-section .pb-2 {
@@ -296,11 +306,11 @@ footer {
       font-size: 0.9rem; } }
 
 @media (max-width: 850px) {
-  #main-section .items .item {
+  #main-section .projects .item {
     width: 100%; }
-  #main-section .items img {
+  #main-section .projects img {
     transform: scale(1.13); }
-  #main-section .items p {
+  #main-section .projects p {
     min-width: 100%; }
   p,
   label,
