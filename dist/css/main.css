@@ -152,7 +152,7 @@ label {
   #main-section .projects .item {
     display: inline-block;
     height: 60%;
-    width: 60%;
+    width: 50%;
     border-radius: 50%;
     transition: all 0.3s ease-in-out; }
     #main-section .projects .item:hover {
