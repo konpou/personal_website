@@ -144,32 +144,27 @@ label {
 
 #main-section {
   padding: 1rem; }
-  #main-section .projects {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center; }
-    #main-section .projects .project {
-      transition: transform 1s, opacity 1s; }
-    #main-section .projects .hidden--project {
-      opacity: 0;
-      transform: translateX(8rem); }
-    #main-section .projects .item {
-      display: inline-block;
-      height: 60%;
-      width: 60%;
+  #main-section .projects .project {
+    transition: transform 1s, opacity 1s; }
+  #main-section .projects .hidden--project {
+    opacity: 0;
+    transform: translateX(8rem); }
+  #main-section .projects .item {
+    display: inline-block;
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out; }
+    #main-section .projects .item:hover {
+      transform: scale(1.083); }
+    #main-section .projects .item a {
+      height: inherit; }
+    #main-section .projects .item img {
       border-radius: 50%;
-      transition: all 0.3s ease-in-out; }
-      #main-section .projects .item:hover {
-        transform: scale(1.083); }
-      #main-section .projects .item a {
-        height: inherit; }
-      #main-section .projects .item img {
-        border-radius: 50%;
-        opacity: 0.7;
-        margin-bottom: 1rem; }
-        #main-section .projects .item img:hover {
-          opacity: 1; }
+      opacity: 0.7;
+      margin-bottom: 1rem; }
+      #main-section .projects .item img:hover {
+        opacity: 1; }
 
 #contact-section {
   padding: 0 2.3rem 2.3rem 2.3rem;
@@ -177,17 +172,8 @@ label {
   font-size: 1rem; }
   #contact-section .flex-items {
     display: flex; }
-    #contact-section .flex-items .form-animation {
-      animation-name: moveInLeft;
-      animation-duration: 4.5s; }
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-15rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+    #contact-section .flex-items .flex-item {
+      flex-basis: 200%; }
   #contact-section .group-items {
     display: grid;
     grid-template-columns: 1fr 1fr;

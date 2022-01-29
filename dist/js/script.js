@@ -14,7 +14,7 @@ const projectReveal = function (entries, observer) {
 };
 const projectObserver = new IntersectionObserver(projectReveal, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.2,
 });
 
 allProjects.forEach(function (section) {
