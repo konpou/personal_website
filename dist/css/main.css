@@ -145,16 +145,15 @@ label {
 #main-section {
   padding: 1rem; }
   #main-section .projects .project {
-    transition: transform 1s, opacity 1s; }
+    transition: transform 2s, opacity 2.5s; }
   #main-section .projects .hidden--project {
     opacity: 0;
-    transform: translateX(8rem); }
+    transform: translateX(-8rem); }
   #main-section .projects .item {
     display: inline-block;
     height: 60%;
     width: 50%;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out; }
+    border-radius: 50%; }
     #main-section .projects .item:hover {
       transform: scale(1.083); }
     #main-section .projects .item a {
