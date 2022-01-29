@@ -283,7 +283,7 @@ footer {
   #contact-section .flex-items {
     flex-direction: column-reverse; }
   footer {
-    height: 20vh;
+    height: 10vh;
     flex-direction: column;
     justify-content: center;
     align-content: center; }
